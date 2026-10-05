@@ -1,0 +1,14 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="locales.lua"/>
+	<Script file="MiscTweaks.lua"/>
+	<Script file="modules\EmbedTweaks.lua"/>
+	<Script file="modules\FiveSecondRule.lua"/>
+	<Script file="modules\GameTimeDisplay.lua"/>
+	<Script file="modules\TooltipAnchor.lua"/>
+	<Script file="modules\ShapeshiftRemover.lua"/>
+	<Script file="modules\ChatEditboxMover.lua"/>
+	<Script file="modules\VendorTweaks.lua"/>
+	<Script file="modules\BagSwap.lua"/>
+	<Script file="modules\MicrobarTweaks.lua"/>
+	<Script file="modules\RollSave.lua"/>
+</Ui>

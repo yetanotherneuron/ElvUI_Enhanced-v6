@@ -1,0 +1,6 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Core.lua"/>
+	<Include file="DataTexts\Load_DataTexts.xml"/>
+	<Include file="MiscTweaks\Load_MiscTweaks.xml"/>
+	<Include file="OptionsTweaks\Load_OptionsTweaks.xml"/>
+</Ui>

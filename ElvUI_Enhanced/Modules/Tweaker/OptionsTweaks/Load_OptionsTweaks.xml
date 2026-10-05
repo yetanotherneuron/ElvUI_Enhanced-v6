@@ -1,0 +1,5 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="locales.lua"/>
+	<Script file="OptionsTweaks.lua"/>
+	<Script file="modules\TabsFix.lua"/>
+</Ui>

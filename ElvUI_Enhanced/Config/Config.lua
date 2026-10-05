@@ -2082,4 +2082,8 @@ function EE:GetOptions()
 --	E.Options.args.enhanced.args.loseControlGroup.order = 8
 --	E.Options.args.enhanced.args.interruptGroup.order = 9
 --	E.Options.args.enhanced.args.unitframesGroup.order = 10
+
+	if ElvUIEnhancedTweaker and ElvUIEnhancedTweaker.InjectOptions then
+		ElvUIEnhancedTweaker:InjectOptions()
+	end
 end

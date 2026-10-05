@@ -1,0 +1,7 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="locales.lua"/>
+	<Script file="DataTexts.lua"/>
+	<Script file="modules\GoldScaleFix.lua"/>
+	<Script file="modules\MovementSpeed.lua"/>
+	<Script file="modules\OnlineCount.lua"/>
+</Ui>

@@ -3,7 +3,8 @@
 ## Version: 1.0
 ## Title: |cff6d28d9E|cff7c3aedl|cff8b5cf6v|cffa78bfaU|cffc4b5fdI|r |cffe5e3e3Enhanced|r
 ## Notes: Plugin-Enhancements for |cff6d28d9E|cff7c3aedl|cff8b5cf6v|cffa78bfaU|cffc4b5fdI|r.
-## SavedVariables: EnhancedDB, EnhancedFriendsListDB
+## SavedVariables: EnhancedDB, EnhancedFriendsListDB, ElvUI_WotLK_TweakerDB
+## SavedVariablesPerCharacter: ElvUI_WotLK_TweakerDBPC
 ## RequiredDeps: ElvUI
 ## DefaultState: Enabled
 

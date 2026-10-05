@@ -183,6 +183,9 @@ function addon:Initialize()
 	self.version = GetAddOnMetadata("ElvUI_Enhanced", "Version")
 
 	self:DBConversions()
+	if ElvUIEnhancedTweaker then
+		ElvUIEnhancedTweaker:InitializeOptions()
+	end
 
 	EP:RegisterPlugin(addonName, self.GetOptions)
 
@@ -201,6 +204,10 @@ function addon:Initialize()
 	self:PrintAddonMerged("ElvUI_EnhancedFriendsList")
 	self:PrintAddonMerged("ElvUI_ImprovedSpecSwitch")
 	self:PrintAddonMerged("ElvUI_MicrobarEnhancement")
+	self:PrintAddonMerged("ElvUI-Tweaker")
+	self:PrintAddonMerged("ElvUI-Tweaker_DataTexts")
+	self:PrintAddonMerged("ElvUI-Tweaker_MiscTweaks")
+	self:PrintAddonMerged("ElvUI-Tweaker_OptionsTweaks")
 end
 
 local function InitializeCallback()
