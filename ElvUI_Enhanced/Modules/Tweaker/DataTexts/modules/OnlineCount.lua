@@ -33,6 +33,7 @@ local pendingSince = nil
 local lastAttempt = 0
 local queryStartTime = nil
 local whoFrameWasShown = false
+local previousFriendsFrameTab = nil
 
 -- Constants
 local WHO_TIMEOUT = 5
@@ -269,6 +270,15 @@ local function RestoreWhoFrame()
         _G.WhoFrame:Hide()
         dbg("Hiding WhoFrame after query")
     end
+
+    if previousFriendsFrameTab then
+        local tab = _G["FriendsFrameTab" .. previousFriendsFrameTab]
+        if tab and FriendsFrame.selectedTab ~= previousFriendsFrameTab then
+            FriendsFrameTab_OnClick(tab)
+            dbg("Restored FriendsFrame tab:", previousFriendsFrameTab)
+        end
+        previousFriendsFrameTab = nil
+    end
     
     -- We only run queries when frame is NOT shown, so always hide it after
     if FriendsFrame:IsShown() then
@@ -403,6 +413,7 @@ local function RequestWho(force)
     
     -- Load the frame and ensure hooks are installed
     EnsureWhoFrameLoaded()
+    previousFriendsFrameTab = FriendsFrame.selectedTab or 1
     
     -- Send the WHO query FIRST (before setting pending)
     SendWho("")
