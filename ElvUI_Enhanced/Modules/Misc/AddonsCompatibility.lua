@@ -164,7 +164,7 @@ local addonFixes = {
 		end
 	end,
 
-	-- https://github.com/ElvUI-WotLK/ElvUI_Enhanced/issues/100
+	-- https://github.com/theshydubii/ElvUI_Enhanced/issues/100
 	["OmniBar"] = function()
 		hooksecurefunc("OmniBar_CreateIcon", function(self)
 			E:RegisterCooldown(self.icons[#self.icons].cooldown)
@@ -177,7 +177,7 @@ local addonFixes = {
 
 	-- BlizzMove r18
 	-- https://www.curseforge.com/wow/addons/blizzmove/files/456128
-	-- https://github.com/ElvUI-WotLK/ElvUI_Enhanced/issues/96
+	-- https://github.com/theshydubii/ElvUI_Enhanced/issues/96
 	["BlizzMove"] = function()
 		if E.private.enhanced.character.enable then
 			local MouseIsOver = MouseIsOver
